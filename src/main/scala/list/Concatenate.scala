@@ -6,7 +6,7 @@ object Concatenate {
 
   def concatenate[T](init: List[T], anotherList: List[T]): List[T] = {
     @tailrec
-    def concatenateTailRec[T](elements: List[T], accumulator: List[T]): List[T] = {
+    def concatenateTailRec(elements: List[T], accumulator: List[T]): List[T] = {
       if (elements.isEmpty) accumulator
       else concatenateTailRec(elements.tail, elements.head :: accumulator)
     }

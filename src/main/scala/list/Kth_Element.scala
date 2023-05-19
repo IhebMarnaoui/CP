@@ -6,7 +6,7 @@ object Kth_Element {
 
   def find[T](list: List[T], index: Int): Int = {
     @tailrec
-    def findTailRec[T](elements: List[T], current_index: Int): T = {
+    def findTailRec(elements: List[T], current_index: Int): T = {
       if (current_index == index) elements.head
       else findTailRec(elements.tail, current_index + 1)
     }
