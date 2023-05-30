@@ -3,7 +3,6 @@ package list
 import scala.annotation.tailrec
 
 object Remove_Kth_Element {
-
   def remove[T](from: List[T], index: Int): List[T] = {
     @tailrec
     def removeTailRec(elements: List[T], current_index: Int, predecessors: List[T]): List[T] = {

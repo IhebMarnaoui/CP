@@ -3,7 +3,6 @@ package list
 import scala.annotation.tailrec
 
 object Reverse {
-
   def reverse[T](list: List[T]): List[T] = {
     @tailrec
     def reverseTailRec(elements: List[T], accumulator: List[T]): List[T] = {

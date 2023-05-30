@@ -3,7 +3,6 @@ package list
 import scala.annotation.tailrec
 
 object Concatenate {
-
   def concatenate[T](init: List[T], anotherList: List[T]): List[T] = {
     @tailrec
     def concatenateTailRec(elements: List[T], accumulator: List[T]): List[T] = {

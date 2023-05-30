@@ -3,7 +3,6 @@ package list
 import scala.annotation.tailrec
 
 object Kth_Element {
-
   def find[T](list: List[T], index: Int): Int = {
     @tailrec
     def findTailRec(elements: List[T], current_index: Int): T = {
