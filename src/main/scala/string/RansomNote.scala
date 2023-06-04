@@ -1,7 +1,6 @@
 package string
 
 object RansomNote {
-
   def ransomNote(note: String, magazine: String): Boolean = {
     def numberOfLetters(string: String): Map[Char, Int] = {
       string.foldLeft(Map[Char, Int]()) {
