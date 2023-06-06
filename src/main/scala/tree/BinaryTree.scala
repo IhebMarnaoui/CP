@@ -80,7 +80,8 @@ case class BinaryTreeNode[+T](override val value: T, override val left: BinaryTr
       }
     }
 
-    collectNodesTailRec(0, List(this))
+    if (level < 0) List.empty
+    else collectNodesTailRec(0, List(this))
   }
 }
 
